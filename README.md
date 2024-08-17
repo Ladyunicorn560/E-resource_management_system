@@ -18,10 +18,15 @@ To set up and run the E-Resource Management System locally, follow these steps:
    ```bash
    git clone https://github.com/Ladyunicorn560/E-resource_management_system.git
    cd E-resource_management_system
-python -m venv env
-.\env\Scripts\activate
 
-
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+2. Create and Activate a Virtual Environment
+   ```bash
+   python -m venv env
+   .\env\Scripts\activate
+3. Install Required Packages
+    ```bash
+   pip install -r requirements.txt
+4.
+    ```bash
+    python manage.py migrate
+    python manage.py runserver
