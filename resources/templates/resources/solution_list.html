@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'resources/styles.css' %}">
+    <title>Solutions</title>
+</head>
+<body>
+    <h1>Solutions</h1>
+    <ul>
+        {% for solution in solutions %}
+            <li>{{ solution.question_bank.subject }} - {{ solution.question_bank.topic }} - <a href="{{ solution.file.url }}">Download</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
